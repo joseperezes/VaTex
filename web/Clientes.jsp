@@ -36,19 +36,7 @@
                 %>
 
 
-                <div id='icon_wrapper'><a  target="_blank"  class='fuse_social_icons_links' href='https://www.facebook.com/'>
-                        <i class='fa fa-facebook fb-awesome-social awesome-social'></i></a><br /><a target="_blank" class='fuse_social_icons_links' href='https://www.instagram.com/esthencar/'>
-                        <i class='fa fa-instagram instagram-awesome-social awesome-social'></i></a><br /></div>
-
-                <!-- Redes sociales -->
-
-                <div class="social">
-                    <ul>
-                        <li><a href="https://www.facebook.com/search/top/?q=nia%20vania" target="_blank"><img alt="siguenos en facebook" height="32" src="http://1.bp.blogspot.com/-PrByV4NBlSs/UiXnD1FEFnI/AAAAAAAABws/dUhvcAdYRiY/s1600/Facebook+alt+1.png" title="siguenos en facebook" width="32" /></a></li>
-                        <li><a href="https://www.instagram.com/esthencar/" target="_blank"><img alt="sígueme en Instagram" height="32" src="http://2.bp.blogspot.com/-kQop92g4NsM/UidPJ06ER1I/AAAAAAAACAA/0mj0jK5hhXM/s1600/instagram2.png" title="sígueme en Instagram" width="32" /></a></li>
-                        <li><a href="https://www.blogger.com/blogger.g?blogID=5558821180902614955#allposts" target="_blank"><img alt="sígueme en Blogger" height="32" src="http://1.bp.blogspot.com/-_NWymh6-9I4/UiXnEcZ1UMI/AAAAAAAABw4/UkFXkztSeOY/s1600/Google+Blogger.png" title="sígueme en Blogger" width="32" /></a></li>
-                    </ul>
-                </div>
+                
                 <br>
                 <!-- Tabla información-->
 
@@ -114,7 +102,7 @@
                             }%>
                         </tbody>  
                     </table>
-                    <input style="color: #FFFFFF; background-color: #5882FA" type="button" onclick=" location.href = 'Pedidos.jsp'" value="Pedidos de Clientes" id="registrar" name="boton" class="btn btn-success" />
+                    <input  type="button" onclick=" location.href = 'Pedidos.jsp'" value="Pedidos de Clientes" id="registrar" name="boton" class="btn " />
 
                 </div>
                 <%@include file="Footer.jsp" %>
