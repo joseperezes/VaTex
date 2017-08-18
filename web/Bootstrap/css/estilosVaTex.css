@@ -1,0 +1,301 @@
+*{
+    font-family: arial;
+    
+    
+}
+
+.banner{
+    width: 100%;
+    height: 100px;
+    
+}
+.logotipo{
+   padding-left: 35%;
+   
+}
+.logo{
+    height: 50px;
+}
+.cuerpo{
+    border-style: solid ;
+    border: 65;
+    margin: 0px 80px 0px 80px;
+    
+}
+
+.logotipo{background-color:white ;}
+
+
+.item{
+    width: 550px;
+    height: 250px;
+     background-color:#700606; 
+}
+    
+/*  Carrusel  */
+    
+.carrusel{
+     width: 400px;
+    height: 450px;
+}
+
+
+
+
+/*  footer  */
+
+.pie{
+    width: 100%;
+    height: 70px;
+    background:#18242e;
+    border-top: 2px solid #000;
+	position: absolute;
+	bottom: 0;
+        color: white;
+}
+   
+    
+.Tablainicio1{
+     width: 400px;
+    height: 350px;
+    margin: 12px;
+}
+
+.td{
+    margin: 12px;
+    border: 10px solid black ;
+}
+ 
+
+ .h3{
+    font-family: fantasy;
+}  
+
+.p{
+     font-size: 120%;
+     font-color:red;
+}
+
+/*  Tabla olvido Contraseña */
+
+table {     font-family: arial;
+    font-size: 15px;    margin: -23px;     width: 480px; text-align: center;    border-collapse:collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #18242e;
+    border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: white; }
+
+td {    padding: 12px;     background: white;     border-bottom: 1px solid #fff;
+    color: black;    border-top: 12px solid transparent; margin: 12px; }
+
+tr:hover td { background: #cbcbc6; color: #339; }
+
+
+/*  CAPAS CONTENEDORAS  */
+ 
+#izquierda  {
+  width: 170px;
+  float: left;
+  }
+ 
+.derecha {
+  width: 1167px;
+  float: left;
+  }
+ 
+/*  ELEMENTOS DEL MENU LATERAL  */
+ 
+#menu {
+  padding:5;
+  margin:10px;
+  list-style-type:none;
+  width:300px;
+  height:12px;
+  }
+#menu li a {
+  height:90px;
+  width:220px;
+  float:left;
+  border-bottom:2px solid #fff;
+  overflow: hidden;
+  }
+#menu li a img {
+  border:0;
+  }
+#menu li a:hover {
+  height:120px;
+  }
+ 
+ 
+/*  ELEMENTOS DE LA GALERIA DE IMAGENES */
+ 
+#galeria {
+  padding:0;
+  margin:40px auto 0 auto;
+  list-style-type:none;
+  height:300px;
+  width:574px;
+  border:1px solid #888;
+  }
+#galeria li {
+  width:60px;
+  height:300px;
+  float:left;
+  border-left:2px solid #000;
+  }
+#galeria li img {
+  height:300px;
+  width:20px;
+  border:0;
+  }
+#galeria li:hover {
+  background:#eee;
+  width:400px;
+  }
+#galeria li:hover img {
+  width:400px;
+  }
+  
+  .tbody{
+     background: #020202;
+  }
+  
+    .tdody1{
+     background: #87B0C2;
+  }
+  
+   .h2{
+    font-family: fantasy;
+    font-color:#550E0E;
+}  
+
+/*Barra busqueda */
+
+#searchform {
+	    width: 280px;
+	     height:30px;
+	    padding: 8px;
+	     margin:50px auto;
+	    background: #ccc;
+	    border-radius: 4px;
+	    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 2px 0 rgba(255,255,255,.5);
+	}
+#searchform input {
+	    width: 190px;
+	     height:20px;
+	    padding: 5px;
+	    float: left;
+	    border: 0;
+	    background: #eee;
+	    border-radius: 3px 0 0 3px;
+	  box-shadow: 0 1px 1px rgba(0,0,0,.4) inset;
+	}
+#searchform input:focus {
+	    outline: 0;
+	    height:21px;
+	    background: #fff;
+	    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+	}
+#searchform input:-webkit-input-placeholder {
+	   color: #999;
+	   font-weight: normal;
+	   font-style: italic;
+	}
+#searchform input:-moz-placeholder {
+	    color: #999;
+	    font-weight: normal;
+	    font-style: italic;
+	}
+#searchform input:-ms-input-placeholder {
+	    color: #999;
+	    font-weight: normal;
+	   font-style: italic;
+	}   
+#searchform button {
+	    position: relative;
+	    float: right;
+	    border: 0;
+	    cursor: pointer;
+	    height: 30px;
+	    width: 80px;
+	    font-size:15px;
+	    color: #fff;
+	    background: #438cdb;
+	    border-radius: 0 3px 3px 0;
+	    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+	}  
+
+#searchform button:hover{
+	    background: #2672e0;
+	}
+#searchform button:active,
+#searchform button:focus{
+	    background: #2672e0;
+	}
+
+#searchform button:before { /* flecha */
+	    content: '';
+	    position: absolute;
+	    border-width: 8px 8px 8px 0;
+	    border-style: solid solid solid none;
+	    border-color: transparent #438cdb transparent;
+	    top: 8px;
+	    left: -5px;
+
+	}
+
+#searchform button:hover:before{
+
+	    border-right-color: #2672e0;
+	}
+#searchform button:focus:before{
+	    border-right-color: #2672e0;
+	}    
+	
+	
+	
+.servi{text-align: center;}
+.corte,.molde{border:1px solid black;
+    background-color: #87B0C2;
+    height:500px;
+}
+#titulo1{text-align: center;
+}
+#registrar{float: right;}
+.navbar{
+    background: #18242e; color: white;
+}
+ul{
+    color: white;
+}
+.pie{
+    
+    text-align: center;
+    
+}
+.btn{
+    background:#79b7e7;
+    border-color: black;
+    color: black;
+}
+
+#modal{
+    background-color: #18242e;
+    border-color: #18242e;
+}
+#myModal{
+    color:black;
+}
+     
+ 
+
+
+
+/*colores para la pagina 
+azul claro:#79b7e7
+azul obscuro:#18242e
+gris:#cbcbc6
+blanco
+negro
+
+
+*/
