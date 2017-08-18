@@ -53,11 +53,11 @@
                 <!-- Tabla información-->
 
                 <div class="container table-responsive">   
-                    <input type="button" onclick=" location.href = 'RegistroClientes.jsp'" value="Registrar Cliente" id="registrar" name="boton" class="btn btn-danger" />
-                    <input  style="color: #FFFFFF; background-color: #5882FA" type="button" onclick=" location.href = 'ClientesEliminados'" value="Listar Todos Los Clientes" id="registrar" name="boton" class="btn btn-warning" />
+                    <input type="button" onclick=" location.href = 'RegistroClientes.jsp'" value="Registrar Cliente" id="registrar" name="boton" class="btn " />
+                    <input   type="button" onclick=" location.href = 'ClientesEliminados'" value="Listar Todos Los Clientes" id="registrar" name="boton" class="btn " />
                     <h1 id="cap1">Clientes Registrados</h1><br>
 
-                    <table class="table table-hover"  border="1">
+                   <table class="table table-hover table-bordered"  border="1"> 
 
                         <thead>
                             <tr>
@@ -80,12 +80,12 @@
                                 <td><%= ele.getTelefono()%></td>
                                 <td><%= ele.getCorreoElectronico()%></td>
 
-                                <td><a href="DetalleCliente.jsp?id=<%= ele.getId() - 1%>"><button style="color: #FFFFFF; background-color: #5882FA" 
+                                <td><a href="DetalleCliente.jsp?id=<%= ele.getId() - 1%>"><button " 
                                                                                                   class="btn btn-primary">Mostrar</button></a></td></td>
 
-                                <td><a href="EditarCliente.jsp?id=<%= ele.getId() - 1%>"><button style="color: #FFFFFF; background-color: #000000"
+                                <td><a href="EditarCliente.jsp?id=<%= ele.getId() - 1%>"><button "
                                                                                                  class="btn btn-warning">Editar</button></a></td>
-                                <td><a href="#" data-toggle="modal" data-target="#ModalEliminar<%= ele.getId() - 1%>" class="btn btn-danger">Eliminar</a></td>
+                                <td><a href="#" data-toggle="modal" data-target="#ModalEliminar<%= ele.getId() - 1%>" class="btn ">Eliminar</a></td>
 
                         <div id="ModalEliminar<%= ele.getId() - 1%>" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-sm">
@@ -100,7 +100,7 @@
                                         <div class="col-lg-offset-3">
                                             <a href="EliminarCliente?id=<%= ele.getId()%>"><button 
                                                     class="btn btn-danger">Si</button></a>
-                                            <button style="color: #FFFFFF; background-color: #000000" type="button" class="btn btn-success" data-dismiss="modal">No</button>
+                                            <button  type="button" class="btn " data-dismiss="modal">No</button>
                                         </div>
                                     </div>
                                 </div>
