@@ -31,7 +31,7 @@
                 <!-- Tabla información-->
 
                 <div class="container">
-                    <h1>Registrar Cliente</h1>
+                    <h1 id="titulo1">Registrar Cliente</h1>
                     <form class="form-horizontal" action="RegistrarClientes">
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="nombre">Nombre:</label>

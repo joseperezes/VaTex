@@ -42,7 +42,7 @@
                 <div class="container table-responsive">   
                     <input type="button" onclick=" location.href = 'RegistroInsumo.jsp'" value="Registrar Insumos" id="registrar" name="boton" class="btn " />
                     <input  type="button" onclick=" location.href = 'InsumosEliminados'" value="Listar Todos Insumos" id="registrar" name="boton" class="btn " />
-                    <h1 id="cap1">Insumos Registrados</h1><br>
+                    <h1 id="titulo1">Insumos Registrados</h1><br>
 
                     <table class="table table-hover table-bordered"  border="1">
 

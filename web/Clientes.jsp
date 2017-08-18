@@ -43,7 +43,7 @@
                 <div class="container table-responsive">   
                     <input type="button" onclick=" location.href = 'RegistroClientes.jsp'" value="Registrar Cliente" id="registrar" name="boton" class="btn " />
                     <input   type="button" onclick=" location.href = 'ClientesEliminados'" value="Listar Todos Los Clientes" id="registrar" name="boton" class="btn " />
-                    <h1 id="cap1">Clientes Registrados</h1><br>
+                    <h1 id="titulo1">Clientes Registrados</h1><br>
 
                    <table class="table table-hover table-bordered"  border="1"> 
 

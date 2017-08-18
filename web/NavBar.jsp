@@ -42,7 +42,7 @@
                 <li class=""><a href="Index.jsp">Inicio</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right"> 
-                <li><a><button type="button" id="modal" data-toggle="modal" data-target="#myModal">Ingresar</button>
+                <li><a><span class="glyphicon glyphicon-log-in"></span><button  type="button" id="modal" data-toggle="modal" data-target="#myModal">Ingresar</button>
 
                         <!-- Modal -->
                         <div id="myModal" class="modal fade" role="dialog">
@@ -68,7 +68,7 @@
                                                     <br>
                                                     <input name="pws" type="password" class="form-control" id="password">
                                                     <br>
-                                                    <button id="login" class="btn btn-danger">Iniciar Sesion</button>
+                                                    <button id="login" class="btn">Iniciar Sesion</button>
 
                                                 </div>
                                                
@@ -77,7 +77,7 @@
                                        
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">CCerrar</button>
                                     </div>
                                 </div>
 
