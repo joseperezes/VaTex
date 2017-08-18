@@ -78,7 +78,7 @@
                 </div>
                 <div class="form-group">        
                     <div class="col-sm-offset-2 col-sm-10">
-                        <input style="color: #FFFFFF; background-color: #5882FA" type="button" onclick=" location.href = 'Clientes.jsp'" value="Atras" id="atras" name="boton" class="btn btn-danger" />
+                        <input  type="button" onclick=" location.href = 'Clientes.jsp'" value="Atras" id="atras" name="boton" class="btn " />
                     </div>
                 </div>
             </form>

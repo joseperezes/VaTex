@@ -77,7 +77,7 @@
 
                         <div class="form-group">        
                             <div class="col-sm-offset-2 col-sm-10">
-                                <input type="submit" class="btn btn-danger" value="Registrar"></input>
+                                <input type="submit" class="btn " value="Registrar"></input>
                                 <input  type="button" onclick=" location.href = 'Pedidos.jsp'" value="Atras" id="atras" name="boton" class="btn " />
                                 <input  type="button" onclick=" location.href = 'PedidosEliminados'" value="Listar Todos Los Pedidos" id="registrar" name="boton" class="btn " />     
                             </div>
@@ -85,6 +85,7 @@
                     </form>
                 </div>
             </div>
+            
             <%@include file="Footer.jsp" %>
             <script>
                 $('#RegistroPedido').bootstrapValidator({
@@ -218,5 +219,20 @@
 
                 });
             </script>
+            <SCRIPT type="text/javascript">
+                function mostrarFechaHora()
+                {
+                  var fecha
+                  fecha=new Date();
+                  
+                  document.write(fecha.getDate()+'/');
+                  document.write((fecha.getMonth()+1)+'/');
+                  document.write(fecha.getFullYear());
+                   
+                }
+
+                //Llamada a la función
+                  mostrarFechaHora();
+            </SCRIPT>
     </body>
 </html>

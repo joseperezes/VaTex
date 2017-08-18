@@ -69,10 +69,10 @@
                                 <td><%= ele.getCorreoElectronico()%></td>
 
                                 <td><a href="DetalleCliente.jsp?id=<%= ele.getId() - 1%>"><button " 
-                                                                                                  class="btn btn-primary">Mostrar</button></a></td></td>
+                                                                                                  class="btn ">Mostrar</button></a></td></td>
 
                                 <td><a href="EditarCliente.jsp?id=<%= ele.getId() - 1%>"><button "
-                                                                                                 class="btn btn-warning">Editar</button></a></td>
+                                                                                                 class="btn ">Editar</button></a></td>
                                 <td><a href="#" data-toggle="modal" data-target="#ModalEliminar<%= ele.getId() - 1%>" class="btn ">Eliminar</a></td>
 
                         <div id="ModalEliminar<%= ele.getId() - 1%>" class="modal fade" role="dialog">
@@ -87,7 +87,7 @@
                                     <div class="modal-body">
                                         <div class="col-lg-offset-3">
                                             <a href="EliminarCliente?id=<%= ele.getId()%>"><button 
-                                                    class="btn btn-danger">Si</button></a>
+                                                    class="btn ">Si</button></a>
                                             <button  type="button" class="btn " data-dismiss="modal">No</button>
                                         </div>
                                     </div>
