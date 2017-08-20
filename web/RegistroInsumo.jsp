@@ -33,7 +33,7 @@
                 <!-- Tabla información-->
 
                 <div class="container">
-                    <h1>Registrar Insumo</h1>
+                    <h1 id="titulo1" >Registrar Insumo</h1>
                     <form class="form-horizontal" action="RegistrarInsumos">
                         <div class="form-group">
                             <label  class="control-label col-sm-2" for="codigo">Codigo Insumo:</label>
