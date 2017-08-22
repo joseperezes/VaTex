@@ -36,63 +36,45 @@
 
 
         %>
-        <div>
-            <div id=”content”>
-                <div id='icon_wrapper'><a  target="_blank"  class='fuse_social_icons_links' href='https://www.facebook.com/'>
-                        <i class='fa fa-facebook fb-awesome-social awesome-social'></i></a><br /><a target="_blank" class='fuse_social_icons_links' href='https://www.instagram.com/esthencar/'>
-                        <i class='fa fa-instagram instagram-awesome-social awesome-social'></i></a><br /></div>
 
-                <!-- Redes sociales -->
+        <!-- Tabla información-->
 
-                <div class="social">
-                    <ul>
-                        <li><a href="https://www.facebook.com/search/top/?q=nia%20vania" target="_blank"><img alt="siguenos en facebook" height="32" src="http://1.bp.blogspot.com/-PrByV4NBlSs/UiXnD1FEFnI/AAAAAAAABws/dUhvcAdYRiY/s1600/Facebook+alt+1.png" title="siguenos en facebook" width="32" /></a></li>
-                        <li><a href="https://www.instagram.com/esthencar/" target="_blank"><img alt="sígueme en Instagram" height="32" src="http://2.bp.blogspot.com/-kQop92g4NsM/UidPJ06ER1I/AAAAAAAACAA/0mj0jK5hhXM/s1600/instagram2.png" title="sígueme en Instagram" width="32" /></a></li>
-                        <li><a href="https://www.blogger.com/blogger.g?blogID=5558821180902614955#allposts" target="_blank"><img alt="sígueme en Blogger" height="32" src="http://1.bp.blogspot.com/-_NWymh6-9I4/UiXnEcZ1UMI/AAAAAAAABw4/UkFXkztSeOY/s1600/Google+Blogger.png" title="sígueme en Blogger" width="32" /></a></li>
-                    </ul>
+        <div class="container">
+            <h1>Editar Insumo</h1>
+            <form class="form-horizontal" action="EditarInsumo">
+                          
+                <div class="form-group">
+                    <label  class="control-label col-sm-2" for="codigo">Codigo Insumo:</label>
+                    <div class="col-sm-10">
+                        <input name="codigo" type="text" class="form-control" id="codigo" placeholder="" value="<%=i.getCodigo()%>" readonly>
+                    </div>
                 </div>
-                <br>
-                <!-- Tabla información-->
-
-                <div class="container">
-                    <h1>Editar Insumo</h1>
-                    <form class="form-horizontal" action="EditarInsumo">
-                        <div class="form-group">
-                            <label  class="control-label col-sm-2" for="id">Id:</label>
-                            <div class="col-sm-10">
-                                <input name="id" type="text" class="form-control" id="id" placeholder=""value="<%=i.getId()%>" readonly>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label  class="control-label col-sm-2" for="codigo">Codigo Insumo:</label>
-                            <div class="col-sm-10">
-                                <input name="codigo" type="text" class="form-control" id="codigo" placeholder="" value="<%=i.getCodigo()%>" readonly>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="categoria">Categoria Insumo:</label>
-                            <select class="" id="categoria" name="categoria">
-                                <option name="categoria"  value="hilos y nailon">Seleccionar</option>
-                                <option name="categoria"  value="hilos y nailon">Hilos y Nailon</option>
-                                <option name="categoria" value="telas">Telas</option>
-                                <option name="categoria" value="bizuteria">Bizuteria</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="nombre">Nombre Insumo:</label>
-                            <div class="col-sm-10">
-                                <input name="nombre" type="text" class="form-control" id="nombre" placeholder="" value="<%=i.getNombre()%>">
-                            </div>
-                        </div>
-                        <div class="form-group">        
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-danger" value="Actualizar">Actualizar</button>
-                                <input style="color: #FFFFFF; background-color: #5882FA" type="button" onclick=" location.href = 'Insumos.jsp'" value="Atras" id="atras" name="boton" class="btn btn-danger" />
-                            </div>
-                        </div>
-                    </form>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tipodocumento">Seleccione Tipo de Insumo:</label>
+                    <div class="col-sm-10">
+                        
+                        <select class="form-control" id="tipodocumento" name="tipodocumento">
+                            <option name="categoria" value="Cedula de Ciudadania">Seleccionar</option>
+                            <option name="categoria" value="Hilo / Nailon">Hilo / Nailon</option>
+                            <option  name="categoria" value="tela">Tela</option>
+                            <option   name="categoria" value="bizuteria">Bizuteria</option>
+                        </select>
+                    </div>
+                </div>  
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="nombre">Nombre Insumo:</label>
+                    <div class="col-sm-10">
+                        <input name="nombre" type="text" class="form-control" id="nombre" placeholder="" value="<%=i.getNombre()%>">
+                    </div>
                 </div>
-            </div>>
-            <%@include file="Footer.jsp" %>
-    </body>
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-danger" value="Actualizar">Actualizar</button>
+                        <input style="color: #FFFFFF; background-color: #5882FA" type="button" onclick=" location.href = 'Insumos.jsp'" value="Atras" id="atras" name="boton" class="btn btn-danger" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    <%@include file="Footer.jsp" %>
+</body>
 </html>

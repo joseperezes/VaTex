@@ -57,11 +57,6 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="codigo">Codigo Pedido:</label>
-                    <div class="col-sm-10">
-                        <input name="Categoria"type="number" class="form-control" id="Categoria" placeholder="" value="<%=i.getCategoria()%>"readonly>
-                    </div>
-                </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="cliente">Nombre Cliente:</label>
                     <div class="col-sm-10">

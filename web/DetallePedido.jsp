@@ -83,7 +83,13 @@
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="email">Fecha Pedido:</label>
                     <div class="col-sm-10">
-                        <input name="fechapedido" type="date" class="form-control" id="email" placeholder="" value="<%=p.getFechaPedido()%>" readonly>
+                        <input name="fechapedido" type="date" class="form-control" id="fechapedido" placeholder="" value="<%=p.getFechaPedido()%>" readonly>
+                    </div>
+                </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Fecha Entrega</label>
+                    <div class="col-sm-10">
+                        <input name="fechaentrega" type="date" class="form-control" id="fechaentrega" placeholder="" value="<%=p.getFechaEntrega()%>" readonly="">
                     </div>
                 </div>
                 <div class="form-group">        

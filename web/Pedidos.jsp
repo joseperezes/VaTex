@@ -55,7 +55,8 @@
                         <th>Nombre</th>
                         <th>Producto</th>
                         <th>Cantidad</th>
-                        <th>Fecha Pedido</th>                    
+                        <th>Fecha Pedido</th>
+                        <th>Fecha Entrega</th> 
                         <th>Mostrar</th>
                         <th>Editar</th>
                         <th>Eliminar</th>
@@ -72,6 +73,7 @@
                         <td><%= ele.getProducto()%></td>
                         <td><%= ele.getCantidad()%></td>
                         <td><%= ele.getFechaPedido()%></td>
+                        <td><%= ele.getFechaEntrega()%></td>
 
 
                         <td><a href="DetallePedido.jsp?id=<%= ele.getId() - 1%>"><button  

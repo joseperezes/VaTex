@@ -105,7 +105,7 @@ public class OperacionesListar {
                 objeto.setProducto(rs.getString(5));
                 objeto.setCantidad(rs.getInt(6));
                 objeto.setFechaPedido(rs.getString(7));
-                objeto.setFechaPedido(rs.getString(8));
+                objeto.setFechaEntrega(rs.getString(8));
                 
                
                 
@@ -140,7 +140,7 @@ public class OperacionesListar {
                 objeto.setProducto(rs.getString(5));
                 objeto.setCantidad(rs.getInt(6));
                 objeto.setFechaPedido(rs.getString(7));
-                objeto.setFechaPedido(rs.getString(8)); 
+                objeto.setFechaEntrega(rs.getString(8)); 
 
                 ListarP.add(objeto);
             }
