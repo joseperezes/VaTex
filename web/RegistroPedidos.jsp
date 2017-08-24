@@ -63,12 +63,6 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="fechapedido">Fecha Pedido:</label>
-                            <div class="col-sm-10"> 
-                                <input name="fechapedido" type="date" class="form-control" id="fechapedido" value="fecha" placeholder="" >
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <label class="control-label col-sm-2" for="fechaentrega">Fecha Entrega:</label>
                             <div class="col-sm-10">
                                 <input name="fechaentrega" type="date" class="form-control" id="fechaentrega" placeholder="" >

@@ -44,7 +44,7 @@ public class ConectaDB {
         this.db ="vatex";
         this.host = "jdbc:mysql://localhost:3306/";
         this.usuario = "root";
-        this.clave = "";
+        this.clave = "jose";
         this.url = host + db + "?user=" + usuario + "&password="+clave;
         this.driverClassName = "com.mysql.jdbc.Driver";
     }

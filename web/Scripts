@@ -8,7 +8,7 @@ SELECT * FROM USUARIOS;
 SELECT * FROM USUARIOS;
 CREATE TABLE CLIENTES (Id int auto_increment not null primary key, Nombre varchar(50),TipoDocumento varchar(50), NumeroDocumento varchar(20),Telefono varchar(15),CorreoElectronico varchar(50),Direccion varchar(50),Estado Boolean );
 SELECT * FROM CLIENTES;
-CREATE TABLE PEDIDOS (Id int auto_increment not null primary key,Consecutivo int  ,Codigo int, Nombre varchar(50),Producto varchar(50), Cantidad int,FechaPedido varchar(20),FechaEntrega varchar(20),Estado Boolean );
+CREATE TABLE PEDIDOS (Id int auto_increment not null primary key,Consecutivo int  ,Codigo int, Nombre varchar(50),Producto varchar(50), Cantidad int,FechaPedido date default now(),FechaEntrega varchar(20),Estado Boolean );
 CREATE TABLE INSUMOS(Id int auto_increment not null primary key,Codigo int, Categoria varchar(50),nombre varchar(50),Estado Boolean );
 
 CREATE TABLE LOGS(Id int auto_increment not null primary key,Fecha datetime,Rol varchar(30),Usuario varchar(50),Accion text);

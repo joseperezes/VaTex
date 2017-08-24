@@ -36,17 +36,17 @@ public class RegistrarPedidos extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             OperacionesInsertar con = new OperacionesInsertar();
-            String Con, Cod, Nom, Prod, Can, FecP, FecE;
+            String Con, Cod, Nom, Prod, Can,FecE;
 
             Con = request.getParameter("consecutivo");
             Cod = request.getParameter("codigo");
             Nom = request.getParameter("nombre");
             Prod = request.getParameter("producto");
             Can = request.getParameter("cantidad");
-            FecP = request.getParameter("fechapedido");
+            
             FecE = request.getParameter("fechaentrega");
 
-            con.InsertarPedidos(Con, Cod, Nom, Prod, Can, FecP, FecE);
+            con.InsertarPedidos(Con, Cod, Nom, Prod, Can,FecE);
 
             response.sendRedirect("RegistroPedidos.jsp");
         }

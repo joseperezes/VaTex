@@ -30,12 +30,12 @@ public class OperacionesInsertar {
             s.printStackTrace();
         }
     }
-    public void InsertarPedidos(String Consecutivo, String Codigo, String Nombre,String Producto,String Cantidad,String FechaPedido,String FechaEntrega) {
+    public void InsertarPedidos(String Consecutivo, String Codigo, String Nombre,String Producto,String Cantidad,String FechaEntrega) {
         try {
             ConectaDB c = new ConectaDB();
             Connection con = c.conectar();
             Statement stm = con.createStatement();
-            String query = "INSERT INTO PEDIDOS (Consecutivo,Codigo,Nombre,Producto,Cantidad,FechaPedido,FechaEntrega,Estado) Values ('" + Consecutivo + "','" +Codigo  + "','" + Nombre + "','" +Producto + "','" + Cantidad + "','" + FechaPedido + "','"+FechaEntrega+"'," + true + ");";
+            String query = "INSERT INTO PEDIDOS (Consecutivo,Codigo,Nombre,Producto,Cantidad,FechaEntrega,Estado) Values ('" + Consecutivo + "','" +Codigo  + "','" + Nombre + "','" +Producto + "','" + Cantidad + "','"+FechaEntrega+"'," + true + ");";
             System.out.println(query);
             stm.executeUpdate(query);
             con.close();
